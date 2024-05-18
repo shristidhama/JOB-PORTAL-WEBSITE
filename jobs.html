@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jobscss.css" >
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Jobs</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOBMAZE</a></h2>
+        <div class="navbar-menu">
+            
+            <a href="jobs.html">Jobs</a>
+            <a href="companies.html">Companies</a>
+            <a href="#">Sign In</a>
+            <a href="index.html">Home</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!--search-->
+    <div class="search-wrapper" >
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job Title">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    
+       
+ 
+ 
+
+    <!--filter box-->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            
+            
+            <select class="filter-select" id="job-function" name="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+            </select>
+            <select class="filter-select" id="employment" name="employment">
+                <option>Employment Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" id="experience" name="experience">
+                <option>Experience</option>
+                <option>1 year</option>
+                <option>2 years</option>
+                <option>3 years</option>
+            </select>
+            <select class="filter-select" id="education" name="education">
+                <option>Educaiton</option>
+                <option>High School</option>
+                <option>Bachelor's degree</option>
+                <option>Master's degree</option>
+            </select>
+            <select class="filter-select" id="Mode" name="mode">
+                <option>Mode of Job</option>
+                <option>Online</option>
+                <option>Offline</option>
+            </select>
+        </div>
+    </div>
+
+    <!--job listing-->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="tcs.png"></img>
+                <div class="job-detail">
+                    <h4>TCS</h4>
+                    <h3>Java Developer role</h3>
+                    <p>TCS has been a great pioneer in feeding the fire of young Techies like you. 
+                        <br>We are a global leader in the technology arena and theres nothing that can stop us from growing together.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">Java</a>
+                <a class="label-b" href="#">SQL</a>
+                <a class="label-c" href="#">UNix</a>
+            </div>
+            <div class="job-posted">
+                Posted 1 day ago
+            </div>
+        
+        </div>
+      
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="randstad.png"></img>
+                <div class="job-detail">
+                    <h4>Randstad</h4>
+                    <h3>Springboot Developer</h3>
+                    <p>Assisting in the planning and analyzing of high-level software strategies and solutions through functional<br> and technical expertise</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">Spring Boot</a>
+                <a class="label-b" href="#">Java8</a>
+                <a class="label-c" href="#">Rest API</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 days ago
+            </div>
+        
+        </div>
+        <button class="job-more">More List</button>
+        </section>
+    
+        
+    
+</body>
+</html>

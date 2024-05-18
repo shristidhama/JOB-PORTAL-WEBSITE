@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logincss.css" >
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Sign In</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOBMAZE</a></h2>
+        <div class="navbar-menu">
+            <!--<a href="#jobseekers">Jobseekers</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="companies.html">Companies</a>
+            <a href="#">Sign In</a>-->
+            <a href="index.html">Home</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user-secret"></i>
+                        <select class="input-select" name="User_type">
+                            <option>Register As</option>
+                            <option>Job Seeker</option>
+                            <option>Job Employer</option>
+                            
+                        </select>
+                    </div>
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <!--<p>Lost Password<a href='#'>&nbsp;Click Here!</a></p>-->
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let signupBtn=document.getElementById("signupBtn");
+        let signinBtn=document.getElementById("signinBtn");
+        let name=document.getElementById("nameField");
+        let title=document.getElementById("title");
+
+        signinBtn.onclick=function(){
+            nameField.style.maxHeight="0";
+            title.innerHTML="Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.add("disable");
+        }
+        signupBtn.onclick=function(){
+            nameField.style.maxHeight="60px";
+            title.innerHTML="Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+    </script>
+
+</body>
+</html>
